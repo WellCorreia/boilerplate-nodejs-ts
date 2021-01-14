@@ -3,9 +3,9 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  plugins: ['@typescript-eslint'],
   extends: [
     'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
     'standard'
   ],
   parser: '@typescript-eslint/parser',

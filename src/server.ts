@@ -1,3 +1,8 @@
 import app from './app';
+import env from './config/env';
 
-app.listen(4568);
+const portServer = env.portServer || 5000;
+
+app.listen(portServer, () => {
+  console.info(`${'\u001b[34;1m' + 'Listening on port '}${portServer}`);
+});

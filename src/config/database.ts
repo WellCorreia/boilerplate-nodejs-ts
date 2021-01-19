@@ -1,6 +1,6 @@
 import env from './env';
 
-module.exports = {
+export default {
   host: env.database.host,
   username: env.database.user,
   password: env.database.pass,
